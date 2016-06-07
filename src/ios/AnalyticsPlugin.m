@@ -1,6 +1,6 @@
 #import "AnalyticsPlugin.h"
 #import <Cordova/CDV.h>
-#import <Analytics.h>
+#import "SEGAnalytics.h"
 
 @implementation AnalyticsPlugin : CDVPlugin
 

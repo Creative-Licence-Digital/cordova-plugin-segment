@@ -31,7 +31,7 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.INTERNET" />
-            
+
             <!-- Recommended by us and most bundled integrations. -->
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
@@ -66,5 +66,46 @@
 
         <header-file src="src/ios/AnalyticsPlugin.h" />
         <source-file src="src/ios/AnalyticsPlugin.m" />
+
+        <header-file src="src/ios/SEGAnalytics.h" />
+        <source-file src="src/ios/SEGAnalytics.m" />
+
+        <header-file src="src/ios/Integrations/SEGAliasPayload.h" />
+        <source-file src="src/ios/Integrations/SEGIdentifyPayload.m" />
+        <header-file src="src/ios/Integrations/SEGScreenPayload.h" />
+        <source-file src="src/ios/Integrations/SEGAliasPayload.m" />
+        <header-file src="src/ios/Integrations/SEGIntegration.h" />
+        <source-file src="src/ios/Integrations/SEGScreenPayload.m" />
+        <header-file src="src/ios/Integrations/SEGGroupPayload.h" />
+        <header-file src="src/ios/Integrations/SEGIntegrationFactory.h" />
+        <header-file src="src/ios/Integrations/SEGTrackPayload.h" />
+        <source-file src="src/ios/Integrations/SEGGroupPayload.m" />
+        <header-file src="src/ios/Integrations/SEGPayload.h" />
+        <source-file src="src/ios/Integrations/SEGTrackPayload.m" />
+        <header-file src="src/ios/Integrations/SEGIdentifyPayload.h" />
+        <source-file src="src/ios/Integrations/SEGPayload.m" />
+
+        <header-file src="src/ios/Internal/NSData+GZIP.h" />
+        <source-file src="src/ios/Internal/NSData+GZIP.m" />
+        <source-file src="src/ios/Internal/SEGLocation.m" />
+        <header-file src="src/ios/Internal/SEGReachability.h" />
+        <header-file src="src/ios/Internal/SEGAnalyticsRequest.h" />
+        <source-file src="src/ios/Internal/SEGReachability.m" />
+        <source-file src="src/ios/Internal/SEGAnalyticsRequest.m" />
+        <header-file src="src/ios/Internal/SEGSegmentIntegration.h" />
+        <header-file src="src/ios/Internal/SEGAnalyticsUtils.h" />
+        <source-file src="src/ios/Internal/SEGSegmentIntegration.m" />
+        <source-file src="src/ios/Internal/SEGAnalyticsUtils.m" />
+        <header-file src="src/ios/Internal/SEGSegmentIntegrationFactory.h" />
+        <header-file src="src/ios/Internal/SEGBluetooth.h" />
+        <source-file src="src/ios/Internal/SEGSegmentIntegrationFactory.m" />
+        <source-file src="src/ios/Internal/SEGBluetooth.m" />
+        <header-file src="src/ios/Internal/UIViewController+SEGScreen.h" />
+        <source-file src="src/ios/Internal/UIViewController+SEGScreen.m" />
+        <header-file src="src/ios/Internal/SEGLocation.h" />
+
+        <framework src="CoreBluetooth.framework" weak="true" />
+        <framework src="CoreLocation.framework" weak="true" />
+        <framework src="CoreTelephony.framework" weak="true" />
     </platform>
 </plugin>
