@@ -1,4 +1,4 @@
-#cordova-plugin-segment
+# cordova-plugin-segment
 
 Cordova plugin for Segment Analytics.
 
@@ -27,8 +27,7 @@ To add more your custom integrations, create a `build-extras.gradle` file in you
 [Android Custom Build Docs]: https://segment.com/docs/libraries/android/#custom-builds
 
 ## Changes to make it work with Cordova
-Staticly included Segment SDK 3.2.2
-May god have mercy on my soul
+Statically included Segment iOS SDK 3.2.2 with the following changes:
 * SEGLocation.m
   *  typeof -> __typeof
     * for the Cordova version of Clang
