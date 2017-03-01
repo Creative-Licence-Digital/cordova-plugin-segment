@@ -26,6 +26,9 @@ import java.util.Map;
 
 public class AnalyticsPlugin extends CordovaPlugin {
 
+    private static final Options DEFAULT_OPTIONS = new Options()
+        .setIntegration("MailChimp", false)
+        .setIntegration("Slack", false);
     private static final String TAG = "AnalyticsPlugin";
     private Analytics analytics;
     private String writeKey;
@@ -51,9 +54,10 @@ public class AnalyticsPlugin extends CordovaPlugin {
             // Catch error on creating a new client
             try {
                 analytics = new Analytics.Builder(
-                        cordova.getActivity().getApplicationContext(),
-                        writeKey
-                ).logLevel(logLevel).build();
+                    cordova.getActivity().getApplicationContext(),
+                    writeKey
+                ).defaultOptions(DEFAULT_OPTIONS)
+                 .logLevel(logLevel).build();
 
                 Analytics.setSingletonInstance(analytics);
             } catch (Exception e) {
