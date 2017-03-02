@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.segment.analytics.Analytics;
 import com.segment.analytics.Analytics.LogLevel;
+import com.segment.analytics.Options;
 import com.segment.analytics.Properties;
 import com.segment.analytics.Properties.Product;
 import com.segment.analytics.StatsSnapshot;
