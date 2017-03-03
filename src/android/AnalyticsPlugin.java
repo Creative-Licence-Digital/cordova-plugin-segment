@@ -9,6 +9,7 @@ import com.segment.analytics.Properties.Product;
 import com.segment.analytics.StatsSnapshot;
 import com.segment.analytics.Traits;
 import com.segment.analytics.Traits.Address;
+import com.segment.analytics.Options;
 
 import org.apache.cordova.BuildConfig;
 import org.apache.cordova.CallbackContext;
@@ -26,9 +27,7 @@ import java.util.Map;
 
 public class AnalyticsPlugin extends CordovaPlugin {
 
-    private static final Options DEFAULT_OPTIONS = new Options()
-        .setIntegration("MailChimp", false)
-        .setIntegration("Slack", false);
+    private static final Options DEFAULT_OPTIONS = new Options().setIntegration("MailChimp", false).setIntegration("Slack", false);
     private static final String TAG = "AnalyticsPlugin";
     private Analytics analytics;
     private String writeKey;
