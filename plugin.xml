@@ -68,6 +68,10 @@
 
         <header-file src="src/ios/SEGAnalytics.h" />
         <source-file src="src/ios/SEGAnalytics.m" />
+
+        <header-file src="src/ios/SEGAnalyticsConfiguration.h" />
+        <source-file src="src/ios/SEGAnalyticsConfiguration.m" />
+
         <header-file src="src/ios/SEGSerializableValue.h" />
 
         <header-file src="src/ios/Integrations/SEGAliasPayload.h" />
@@ -83,28 +87,41 @@
         <header-file src="src/ios/Integrations/SEGPayload.h" />
         <source-file src="src/ios/Integrations/SEGTrackPayload.m" />
         <header-file src="src/ios/Integrations/SEGIdentifyPayload.h" />
+        <header-file src="src/ios/Integrations/SEGIntegrationsManager.h" />
+        <source-file src="src/ios/Integrations/SEGIntegrationsManager.m" />
         <source-file src="src/ios/Integrations/SEGPayload.m" />
 
         <header-file src="src/ios/Internal/NSData+GZIP.h" />
-        <source-file src="src/ios/Internal/NSData+GZIP.m" />
-        <source-file src="src/ios/Internal/SEGLocation.m" />
-        <header-file src="src/ios/Internal/SEGReachability.h" />
+        <header-file src="src/ios/Internal/NSData+SEGGZIP.h" />
         <header-file src="src/ios/Internal/SEGAnalyticsRequest.h" />
-        <source-file src="src/ios/Internal/SEGReachability.m" />
-        <source-file src="src/ios/Internal/SEGAnalyticsRequest.m" />
-        <header-file src="src/ios/Internal/SEGSegmentIntegration.h" />
         <header-file src="src/ios/Internal/SEGAnalyticsUtils.h" />
-        <source-file src="src/ios/Internal/SEGSegmentIntegration.m" />
-        <source-file src="src/ios/Internal/SEGAnalyticsUtils.m" />
-        <header-file src="src/ios/Internal/SEGSegmentIntegrationFactory.h" />
         <header-file src="src/ios/Internal/SEGBluetooth.h" />
-        <source-file src="src/ios/Internal/SEGSegmentIntegrationFactory.m" />
-        <source-file src="src/ios/Internal/SEGBluetooth.m" />
-        <header-file src="src/ios/Internal/UIViewController+SEGScreen.h" />
-        <source-file src="src/ios/Internal/UIViewController+SEGScreen.m" />
+        <header-file src="src/ios/Internal/SEGFileStorage.h" />
+        <header-file src="src/ios/Internal/SEGHTTPClient.h" />
         <header-file src="src/ios/Internal/SEGLocation.h" />
-
-
+        <header-file src="src/ios/Internal/SEGReachability.h" />
+        <header-file src="src/ios/Internal/SEGSegmentIntegration.h" />
+        <header-file src="src/ios/Internal/SEGSegmentIntegrationFactory.h" />
+        <header-file src="src/ios/Internal/SEGStorage.h" />
+        <header-file src="src/ios/Internal/SEGStoreKitTracker.h" />
+        <header-file src="src/ios/Internal/SEGUserDefaultsStorage.h" />
+        <header-file src="src/ios/Internal/SEGUtils.h" />
+        <header-file src="src/ios/Internal/UIViewController+SEGScreen.h" />
+        <source-file src="src/ios/Internal/NSData+GZIP.m" />
+        <source-file src="src/ios/Internal/NSData+SEGGZIP.m" />
+        <source-file src="src/ios/Internal/SEGAnalyticsRequest.m" />
+        <source-file src="src/ios/Internal/SEGAnalyticsUtils.m" />
+        <source-file src="src/ios/Internal/SEGBluetooth.m" />
+        <source-file src="src/ios/Internal/SEGFileStorage.m" />
+        <source-file src="src/ios/Internal/SEGHTTPClient.m" />
+        <source-file src="src/ios/Internal/SEGLocation.m" />
+        <source-file src="src/ios/Internal/SEGReachability.m" />
+        <source-file src="src/ios/Internal/SEGSegmentIntegration.m" />
+        <source-file src="src/ios/Internal/SEGSegmentIntegrationFactory.m" />
+        <source-file src="src/ios/Internal/SEGStoreKitTracker.m" />
+        <source-file src="src/ios/Internal/SEGUserDefaultsStorage.m" />
+        <source-file src="src/ios/Internal/SEGUtils.m" />
+        <source-file src="src/ios/Internal/UIViewController+SEGScreen.m" />
 
         <framework src="CoreBluetooth.framework" weak="true" />
         <framework src="CoreLocation.framework" weak="true" />
