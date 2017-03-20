@@ -520,7 +520,7 @@ static CTTelephonyNetworkInfo *_telephonyNetworkInfo;
 - (void)notifyForName:(NSString *)name userInfo:(id)userInfo
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:name object:userInfo];
+        [[NSNotificationCenter defaultCenter] postNotificationName:name object:self];
         SEGLog(@"sent notification %@", name);
     });
 }
