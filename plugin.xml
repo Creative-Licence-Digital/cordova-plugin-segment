@@ -78,8 +78,8 @@
         <source-file src="src/ios/Crypto/SEGAES256Crypto.m" />
         <header-file src="src/ios/Crypto/SEGCrypto.h" />
 
-        <header-file src="src/ios/Middlewares/SEGContent.h" />
-        <source-file src="src/ios/Middlewares/SEGContent.m" />
+        <header-file src="src/ios/Middlewares/SEGContext.h" />
+        <source-file src="src/ios/Middlewares/SEGContext.m" />
         <header-file src="src/ios/Middlewares/SEGMiddleware.h" />
         <source-file src="src/ios/Middlewares/SEGMiddleware.h" />
 
