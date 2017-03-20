@@ -1,16 +1,16 @@
-// AnalyticsUtils.h
-// Copyright (c) 2014 Segment.io. All rights reserved.
-
 #import <Foundation/Foundation.h>
+#import "SEGSerializableValue.h"
 
-NSURL *SEGAnalyticsURLForFilename(NSString *filename);
+NS_ASSUME_NONNULL_BEGIN
+
+NSString *GenerateUUIDString();
 
 // Date Utils
 NSString *iso8601FormattedString(NSDate *date);
 
 // Async Utils
 dispatch_queue_t seg_dispatch_queue_create_specific(const char *label,
-                                                    dispatch_queue_attr_t attr);
+                                                    dispatch_queue_attr_t _Nullable attr);
 BOOL seg_dispatch_is_on_specific_queue(dispatch_queue_t queue);
 void seg_dispatch_specific(dispatch_queue_t queue, dispatch_block_t block,
                            BOOL waitForCompletion);
@@ -25,8 +25,10 @@ void SEGLog(NSString *format, ...);
 
 // JSON Utils
 
-NSDictionary *SEGCoerceDictionary(NSDictionary *dict);
+JSON_DICT SEGCoerceDictionary(NSDictionary *dict);
 
 NSString *SEGIDFA(void);
 
 NSString *SEGEventNameForScreenTitle(NSString *title);
+
+NS_ASSUME_NONNULL_END
