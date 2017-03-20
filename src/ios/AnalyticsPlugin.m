@@ -68,12 +68,18 @@
 {
     NSString* event = [command.arguments objectAtIndex:0];
     NSDictionary* properties = [command.arguments objectAtIndex:1];
+    NSDictionary* options = [command.arguments objectAtIndex:2];
+    
 
     if (properties == (id)[NSNull null]) {
         properties = nil;
     }
     
-    [[SEGAnalytics sharedAnalytics] track:event properties:properties];
+    if (options == (id)[NSNull null]) {
+        options = nil;
+    }
+    
+    [[SEGAnalytics sharedAnalytics] track:event properties:properties options:options];
 }
 
 - (void)screen:(CDVInvokedUrlCommand*)command
