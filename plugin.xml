@@ -74,6 +74,15 @@
 
         <header-file src="src/ios/SEGSerializableValue.h" />
 
+        <header-file src="src/ios/Crypto/SEGAES256Crypto.h" />
+        <source-file src="src/ios/Crypto/SEGAES256Crypto.m" />
+        <header-file src="src/ios/Crypto/SEGCrypto.h" />
+
+        <header-file src="src/ios/Middlewares/SEGContent.h" />
+        <source-file src="src/ios/Middlewares/SEGContent.m" />
+        <header-file src="src/ios/Middlewares/SEGMiddleware.h" />
+        <source-file src="src/ios/Middlewares/SEGMiddleware.h" />
+
         <header-file src="src/ios/Integrations/SEGAliasPayload.h" />
         <source-file src="src/ios/Integrations/SEGIdentifyPayload.m" />
         <header-file src="src/ios/Integrations/SEGScreenPayload.h" />
