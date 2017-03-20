@@ -68,6 +68,7 @@
 
         <header-file src="src/ios/SEGAnalytics.h" />
         <source-file src="src/ios/SEGAnalytics.m" />
+        <header-file src="src/ios/SEGSerializableValue.h" />
 
         <header-file src="src/ios/Integrations/SEGAliasPayload.h" />
         <source-file src="src/ios/Integrations/SEGIdentifyPayload.m" />
@@ -102,6 +103,8 @@
         <header-file src="src/ios/Internal/UIViewController+SEGScreen.h" />
         <source-file src="src/ios/Internal/UIViewController+SEGScreen.m" />
         <header-file src="src/ios/Internal/SEGLocation.h" />
+
+
 
         <framework src="CoreBluetooth.framework" weak="true" />
         <framework src="CoreLocation.framework" weak="true" />
