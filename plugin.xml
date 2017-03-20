@@ -81,7 +81,7 @@
         <header-file src="src/ios/Middlewares/SEGContext.h" />
         <source-file src="src/ios/Middlewares/SEGContext.m" />
         <header-file src="src/ios/Middlewares/SEGMiddleware.h" />
-        <source-file src="src/ios/Middlewares/SEGMiddleware.h" />
+        <source-file src="src/ios/Middlewares/SEGMiddleware.m" />
 
         <header-file src="src/ios/Integrations/SEGAliasPayload.h" />
         <source-file src="src/ios/Integrations/SEGIdentifyPayload.m" />
